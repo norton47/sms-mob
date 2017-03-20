@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Форма контакта
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <form #formVar="ngForm" (ngSubmit)="logForm(formVar.value)">
+        <ion-item>
+            <ion-label>ФИО</ion-label>
+            <ion-input type="text" [(ngModel)]="data.name" required name="name"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Телефон</ion-label>
+            <ion-textarea [(ngModel)]="data.phone" required name="phone"></ion-textarea>
+        </ion-item>
+            <button ion-button type="submit" block>Получить талон</button>
+    </form>
+</ion-content>

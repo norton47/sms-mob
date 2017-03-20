@@ -1,0 +1,28 @@
+.full-box{
+  width:100%;
+  height:50vh;
+  position: relative;
+}
+.full-box button{
+  width:300px;
+  height:150px;
+  position: absolute;
+  left:50%;
+  top:50%;
+  margin-top:-75px;
+  margin-left:-150px;
+
+}
+.box-form{
+  width:400px;
+  height:400px;
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-top:-200px;
+  margin-left:-200px;
+}
+.msg {
+  text-align: center;
+  vertical-align: middle;
+}

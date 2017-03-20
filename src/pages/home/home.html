@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item class="" style="height:100vh">
+      <div class="full-box">
+        <button ion-button color="secondary" (click)="inQueueWithSMS()"           >
+          Встать в очередь <br>
+          <small>с информацией по</small> <br>
+          SMS
+        </button>
+      </div>
+      <div class="full-box">
+        <button ion-button color="danger" (click)="inQueue()"
+                style="    display: inline-block;">
+          Встать в очередь <br>
+          <small>без информации по</small>
+          <br>SMS
+        </button>
+      </div>
+  </ion-item>
+</ion-content>

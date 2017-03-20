@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Center
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div *ngIf="centerPage">
+    <ion-item class="my">
+      <button  ion-button class="btn btn-primary btn-lg col-md-12 btn-block point-hand"
+
+         *ngFor="let center of centers; let i = index"
+         (click)="choose(center)">
+
+        {{ center.name }} <br>
+        <small>{{ center.code }}</small>
+        <br>
+      </button>
+
+    </ion-item>
+  </div>
+
+  <div *ngIf="loginPage" style="height:100vh">
+  <form #formVar="ngForm" (ngSubmit)="loginIn(formVar.value)">
+    <ion-item>
+      <ion-label>Логин</ion-label>
+      <ion-input type="text" [(ngModel)]="data.login" required name="login"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Пароль</ion-label>
+      <ion-input [(ngModel)]="data.password" required name="password"></ion-input>
+    </ion-item>
+    <button ion-button type="submit" block>Add Todo</button>
+  </form>
+  </div>
+</ion-content>
